@@ -1,6 +1,6 @@
 # Finance-KPI-Dashboard
 
-## 💰 Finance KPI Dashboard – Executive Financial Performance Analysis
+## Finance KPI Dashboard – Executive Financial Performance Analysis
 
 ### About the Project
 This project involves building a high-impact Finance KPI Dashboard in Power BI designed to track team sales performance against set targets. The analysis covers 14 months of data, from January 2023 through February 2024. The dashboard provides both a high-level summary of critical financial metrics and a detailed view of individual salesperson performance.
@@ -45,11 +45,13 @@ Several key measures were developed to drive the dashboard's insights:
     o	Dynamic Title: A measure that automatically updates the chart title to show performance status (e.g., "We met targets        for 2 out of 14 months").
 
 ### Dashboard Features
-•	Executive Summary Cards: Utilizes the "New Card Visual" to show main KPIs alongside YTD reference labels for immediate context.
+•	Executive Summary Cards: Utilizes the "New Card Visual" to show main KPIs alongside YTD reference labels for 
+   immediate context.
 
 •	Win/Loss Chart: A conditional-formatted column chart indicating which months met targets (Green) or missed them (Red).
 
-•	Actual vs. Target Trend: An overlapping column chart where the Target is shown with 50% transparency in the background and Actual performance in the foreground.
+•	Actual vs. Target Trend: An overlapping column chart where the Target is shown with 50% transparency in the 
+   background and Actual performance in the foreground.
 
 •	Team Performance Table: A detailed list featuring:
 
@@ -67,6 +69,6 @@ Several key measures were developed to drive the dashboard's insights:
 Despite the visually appealing interface, the data reveals a challenging period where the team met targets in only 2 out of 14 months. The dashboard allows stakeholders to drill down into specific months or individual team members to identify root causes of underperformance.
 
 ### 7. Screenshots / Demos
-Show what the dashboard looks like.
+The dashboard looks like.
 
 Example:![Dashboard Preview](https://github.com/sithara-sreedharan/Finance-KPI-Dashboard/blob/main/Snapshot%20of%20Finance%20KPI%20Dashboard.png)
