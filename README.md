@@ -1,100 +1,45 @@
 # Finance-KPI-Dashboard
+
 ## 💰 Finance KPI Dashboard – Executive Financial Performance Analysis
 
-An interactive Power BI dashboard designed to monitor and analyze key financial KPIs, enabling business leaders to track revenue performance, profitability trends, Actual-target variance, and overall financial health. The dashboard transforms raw financial data into actionable insights through dynamic visualizations, KPI indicators, and executive-level reporting.
-### 2.Purpose
-The Finance KPI Dashboard is an executive reporting solution built in Power BI to provide a comprehensive view of an organization's financial performance.
-The dashboard helps stakeholders monitor critical metrics such as Revenue, Profit, Target vs Actual performance, Year-to-Date (YTD) growth, and financial trends over time. Through intuitive visualizations and AI-generated commentary, users can quickly identify areas of success, potential risks, and opportunities for improvement.
-This dashboard is suitable for finance managers, business analysts, executives, and decision-makers who require quick access to meaningful financial insights for strategic planning and performance monitoring.
+### About the Project
+This project involves building a high-impact Finance KPI Dashboard in Power BI designed to track team sales performance against set targets. The analysis covers 14 months of data, from January 2023 through February 2024. The dashboard provides both a high-level summary of critical financial metrics and a detailed view of individual salesperson performance.
+### Built With
+•	Power BI Desktop: For data modeling and visualization.
+•	Power Query: For data cleaning, unpivoting, and transformation.
+•	DAX (Data Analysis Expressions): For calculating complex KPIs and dynamic titles.
+### Data Preparation
+The project utilizes four primary data tables:
+1.	Actual Performance: Monthly sales performance by salesperson.
+2.	Targets: Monthly sales targets for each salesperson.
+3.	Calendar Dimension: Monthly dates, enhanced with "Year" and "Month Name" columns for easier analysis.
+4.	People Dimension: Metadata regarding the sales team.
+### Key ETL Steps:
+•	Unpivoting: Transformed "Matrix" style reports into a standard three-column table (Salesperson, Month, Sales) to facilitate analysis.
+•	Data Typing: Fixed date and numerical data types to ensure calculation accuracy.
+### Data Modeling
+The data model follows a tidy schema with two fact tables—Actuals and Targets—positioned at the center, connected to the Calendar and People dimension tables. Relationships were established using the date and salesperson columns to ensure seamless filtering across all visuals.
+### DAX Measures
+Several key measures were developed to drive the dashboard's insights:
+•	Core KPIs: Total Sales Actual, Total Sales Target, Variance, and Variance %.
+•	Time Intelligence: Year-to-Date (YTD) calculations for sales, targets, and variance using the DATESYTD function.
+•	Performance Indicators:
+o	Target Reached Month Count: Counts the number of months where the target was met.
+o	Dynamic Visual Labels: A custom measure using Emoji symbols (green and red circles) to visually represent positive or negative variance.
+o	Dynamic Title: A measure that automatically updates the chart title to show performance status (e.g., "We met targets for 2 out of 14 months").
+### Dashboard Features
+•	Executive Summary Cards: Utilizes the "New Card Visual" to show main KPIs alongside YTD reference labels for immediate context.
+•	Win/Loss Chart: A conditional-formatted column chart indicating which months met targets (Green) or missed them (Red).
+•	Actual vs. Target Trend: An overlapping column chart where the Target is shown with 50% transparency in the background and Actual performance in the foreground.
+•	Team Performance Table: A detailed list featuring:
+o	Employee Photos: Categorized as Image URLs.
+o	Conditional Formatting: Integrated Data Bars for actual values and variance.
+o	Sparklines: Inline trend graphs showing sales performance over time for each individual.
+•	Interactive Slicers: Filters for team selection that update all visuals and dynamic narratives.
+•	Smart Narrative: A dynamically generated text summary that explains current performance trends in plain language.
+### Insights
+Despite the visually appealing interface, the data reveals a challenging period where the team met targets in only 2 out of 14 months. The dashboard allows stakeholders to drill down into specific months or individual team members to identify root causes of underperformance.
 
-### 3. Tech Stack
-
-The dashboard was built using the following tools and technologies:
-
-📊 Power BI Desktop – Primary platform for dashboard development and interactive reporting.
-
-📂 Power Query – Used for data extraction, transformation, unpivoting, and data preparation.
-
-🧠 DAX (Data Analysis Expressions) – Used for KPI calculations, YTD metrics, variance analysis, dynamic indicators, and custom business logic.
-
-🔗 Data Modeling – Multiple fact tables connected through optimized relationships for accurate financial reporting.
-
-📈 Advanced Visualizations – KPI cards, trend charts, variance indicators, sparklines, performance tables, and smart narrative visuals.
-
-🤖 Smart Narrative – AI-generated business commentary to summarize financial performance automatically.
-
-📁 File Formats – .pbix for development and .png for dashboard previews.
-
-
-### 4. Data Source
-Source: Sample Financial Dataset used in Chandoo's Power BI Dashboard Tutorial Series.
-
-Description:
-The data is structured to demonstrate real-world financial reporting and KPI monitoring scenarios commonly used in business intelligence solutions.
-
-### 5. Features / Highlights
-
-Walkthrough of Key Visuals
-
-#### KPI Summary Cards
-Display key financial indicators such as Total Sales Actual, Total Sales Target, Variance ,Variance %,Months target reached  with dynamic reference labels  including the YTD sales and performance comparisons.
-
-##### Year-to-Date (YTD) Analysis
-Track cumulative performance throughout the year using DAX-driven YTD calculations, helping stakeholders monitor progress against targets.
-
-##### Variance Indicators with Emoji
-Custom DAX measures enhance variance reporting with visual indicators, making performance interpretation faster and more intuitive.
-
-#### Target vs Actual Performance
-Compare planned financial targets against actual business results to identify overperformance and underperformance.
-
-#### Salesperson Performance Table
-Detailed performance matrix featuring custom formatting, sparklines, and key metrics to evaluate individual contributions.
-
-#### Smart Narrative Insights
-AI-generated commentary automatically summarizes dashboard findings and highlights important financial observations.
-
-#### Executive Reporting Layout
-Clean, professional design optimized for leadership reviews and strategic decision-making.
-
-#### Business Impact & Insights
-
-Financial Visibility: Monitor critical financial KPIs from a centralized dashboard.
-
-Performance Tracking: Measure business performance against actual and targets.
-
-Trend Identification: Detect growth opportunities and potential financial risks early.
-
-Data-Driven Decisions: Enable executives to make informed strategic decisions based on real-time insights.
-
-Operational Efficiency: Reduce manual reporting effort through automated KPI tracking.
-
-Executive Communication: Present financial performance in a clear and visually compelling format.
-
-###  6. Key Power BI Concepts Demonstrated
-•	Power Query Data Transformation
-
-•	Unpivoting Data for Analysis
-
-•	Data Modeling with Multiple Fact Tables
-
-•	DAX YTD Calculations
-
-•	FILTER Function Usage
-
-•	Dynamic KPI Indicators
-
-•	Reference Labels in Card Visuals
-
-•	Custom Variance Formatting with Emojis
-
-•	Sparklines in Tables
-
-•	Smart Narrative Visual
-
-•	Power BI Themes & Report Styling
-
-•	Executive Dashboard Design Best Practices
 
 ### 7. Screenshots / Demos
 Show what the dashboard looks like.
